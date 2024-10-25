@@ -1,8 +1,8 @@
-function Tile({className},{value}){
+function Tile({className,value,onClick}){
     console.log("tiles int he Tile",{value});
-    debugger
+    
     return (
-            <div className={`tile ${className}`}>
+            <div onClick={onClick} className={`tile ${className}`}>
                 {value}
             </div>
     );
